@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* TUDO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: #0a0a0a;
+    color: white;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1.5s ease-in-out forwards;
+    
+}
+
+
+/*TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU*/
+
+
+/* Cabecalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+}
+
+header h1 {
+    font-size: 70px;
+    
+}
+
+/* NAV */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight:600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    color: #ff00ff;
+}
+
+/* Inicial */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+
+.info {
+    max-width: 50%;
+}
+
+.info h2 {
+    font-size: 40px;
+}
+
+.info .role {
+    color: #ff00ff;
+    font-weight: 700;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    background: none; /* Remove fundo */
+    padding: 0px;
+    width: fit-content;
+}
+.buttons a {
+    text-decoration: none;
+}
+.buttons img {
+    width: 40px;
+    height: auto;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.image {
+    position: relative;
+    padding: 20px 160px;
+}
+
+.glow {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(#ff00ff, transparent);
+    border-radius: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image img {
+    position: relative;
+    width: 400px;
+    border-radius: 100px;
+   border: solid white;
+}
+
+
+
+/*TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU*/
+
+
+/* aboutme */
+.aboutme h1{
+    font-size: 40px;
+    padding-top: 5%;
+    padding-left: 45%;
+}
+
+.aboutme img{
+    position: relative;
+    width: 300px;
+    border-radius: 100px;
+    border: solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.aboutme .glow{
+    width: 350px;
+    height: 350px;
+}
+
+.aboutme h2{
+    font-size: 30px;
+    padding-top: 2%;
+    padding-left: 30%;
+}
+
+.aboutme p{
+        max-width: 1500px; /* Define uma largura máxima para limitar o texto */
+        margin: 0 auto; /* Centraliza o texto na tela */
+        text-align: center; /* Alinha o texto ao centro */
+        font-size: 17px; /* Reduz o tamanho da fonte */
+        line-height: 1.6; /* Ajusta o espaçamento entre linhas */
+}
+.aboutme span {
+    color: #ff00ff; /* Cor do "Me" (roxo, por exemplo) */
+}
+
+
+
+
+/*TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU*/
+
+
+
+/* Minha Educacao */
+.education-title {
+    padding-top: 5%;
+    padding-left: 0%;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.education-title span {
+    color: #ff00ff; /* Cor rosa do "Education" */
+}
+
+.education-section span{
+    color: #ff00ff;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Linha central da timeline */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #ff00ff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+/* Containers dos blocos */
+.timeline-container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+/* Estilização dos blocos */
+.content {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ff00ff;
+    text-align: left;
+}
+
+/* Alinhamento dos blocos */
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+/* Bolinhas nos pontos da timeline */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #ff00ff;
+    border-radius: 50%;
+    top: 20px;
+    right: -10px;
+}
+
+.right::before {
+    left: -10px;
+}
+
+/* Ano destacado */
+.year {
+    color: #ff00ff;
+    font-weight: bold;
+}
+
+.timeline span{
+    color: #ff00ff
+}
+
+
+
+/*TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU*/
+
+
+
+/* Título */
+.skills-title {
+    padding-top: 10%;
+    font-size: 56px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-title span {
+    color: #ff00ff; /* Cor rosa do "Skills" */
+}
+
+/* Container das Skills */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* Box de cada conjunto de skills */
+.skill-box {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    height: 400px;
+}
+
+/* Barra de progresso */
+.skill {
+    margin: 60px 0;
+}
+
+.skill p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #ff00ff;
+    transition: width 1.5s ease-in-out;
+}
+
+/* Tamanhos das barras */
+.html {
+    width: 90%;
+}
+
+.css {
+    width: 80%;
+}
+
+.js {
+    width: 60%;
+}
+
+.Java{
+    width: 60%;
+}
+
+.Hardware{
+    width: 90%;
+}
+
+.Bd{
+    width: 40%;
+}
+
+
+
+/*TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU*/
+
+
+/* Meus certificados */
+
+.certificados h1{
+    font-size: 40px;
+    padding-top: 5%;
+    padding-left: 40%;
+}
+
+.certificados span{
+    color: #ff00ff;
+}
+
+.certificados ul {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens "quebrem" em uma nova linha se necessário */
+    list-style-type: none;
+    padding-left: 15%;
+    padding-top: 5%;
+}
+
+.certificados li {
+    text-align: center; /* Centraliza o texto com a imagem */
+    
+}
+
+
+/* Adiciona espaçamento ao redor de cada imagem */
+.certificados img {
+    display: block;
+    margin: 0 15px 20px 15px;   /* Espaçamento de 15px nas laterais e 20px abaixo das imagens */
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease; /* Transição suave para o efeito bloom */
+}
+
+.certificados img:hover {
+    transform: scale(1.1); /* Aumenta levemente o tamanho da imagem */
+}
+
+
+
+/*TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU TROCOU*/
+
+
+
+.language-title {
+    padding-top: 15%;
+    font-size: 56px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.language-title span {
+    color: #ff00ff; 
+}
+
+/* Container das Skills */
+.language-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente, se necessário */
+    flex-direction: column; /* Mantém o título acima do quadro */
+    text-align: center;
+    width: 150%;
+}
+
+/* Box de cada conjunto de skills */
+.language-box {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 800px;
+    height: 350px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Barra de progresso */
+.language {
+    margin: 60px 0;
+}
+
+.language p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.progress-barlanguage {
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #ff00ff;
+    transition: width 1.5s ease-in-out;
+}
+
+/* Tamanhos das barras */
+.Ingles {
+    width: 50%;
+}
+
+.Espanhol {
+    width: 30%;
+}
+
+.Portugues {
+    width: 100%;
+}
+
+
+
+
+
+
+
+.embaixo h2{
+    padding-top: 80%;
+}
